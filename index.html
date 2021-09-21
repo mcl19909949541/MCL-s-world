@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+        	/* x7blog.com 爱心特效 */
+            !function (e, t, a) {function r() {for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");requestAnimationFrame(r)}function n() {var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {t && t(), o(e)}}function o(e) {var a = t.createElement("div");a.className = "heart", s.push({el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()}), t.body.appendChild(a)}function i(e) {var a = t.createElement("style");a.type = "text/css";try {a.appendChild(t.createTextNode(e))} catch (t) {a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"}var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {setTimeout(e, 1e3 / 60)}, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);
+</script>
+        
+<head>
+    <meta charset="utf-8">   <!-- 申明编码格式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   <!--关联名称  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MCL Home">
+    <meta name="keywords" content="MCL,Homepage">
+    <meta name="author" content="MCL">
+    <title>Lucky Home</title>   <!-- 定义网页名称 -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/vno.css">   <!--链接到自定义css，头像效果  -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css"><!--字体这块可以再改改  -->
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png"><!-- 图片插入 -->
+    <link rel="icon" href="./favicon.ico"><!--自定义网站图标icon -->
+</head>
+
+<body>
+    <span class="mobile btn-mobile-menu">
+        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
+        <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
+    </span>
+    <header id="panel" class="panel-cover">
+        <div class="panel-main">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+                    <div class="ih-item circle effect right_to_left">
+                        <a href="#" title="" class="blog-button"><!-- 植入按钮 -->
+                            <div class="img"><img src="./img/me.jpg" alt="img" class="js-avatar iUp profilepic"></div><!--图片插入  -->
+                            <div class="info iUp"><!--翻转特效  -->
+                                <div class="info-back">
+                                    <h2>
+
+                                            running
+
+                                    </h2>
+                                    <p>
+
+                                            2021 · 奔跑
+
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <h1 class="panel-cover__title panel-title iUp">
+                        <a href="http://123.56.223.136/" target="_blank" >MCL</a>
+                    </h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp">run for Life</p>
+                    <hr class="panel-cover__divider iUp" />
+                    <p id="description" class="panel-cover__description iUp">静夜无边，相思无岸，万事随缘，前路漫漫。
+                        <br/>
+                        <strong>-「群星陨落」</strong>
+                    </p>
+                    <div class="navigation-wrapper iUp"><!--有时间在多搞几个页面 -->
+                        <div>
+                            <nav class="cover-navigation cover-navigation--primary">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                         <li class="navigation__item">
+                                        <a href="./Hobby/index.html" class="blog-button">爱好</a><!-- 下一个页面 -->
+                                    </li>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="iUp"><!--下面插入四个链接 -->
+                            <nav class="cover-navigation navigation--social">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="https://github.com/mcl19909949541" title="github" target="_blank">
+                                            <i class='social iconfont icon-github'></i>
+                                            <span class="label">github</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://blog.csdn.net/qq_52290436?spm=1001.2101.3001.5343" title="CSDN" target="_blank">
+                                            <i class='social iconfont icon-cnblogs'></i>
+                                            <span class="label">cnblogs</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="navigation__item">
+                                        <a href="https://www.zhihu.com/people/pog-9" title="zhihu">
+                                            <i class='social iconfont icon-zhihu'></i>
+                                            <span class="label">zhihu</span>
+                                        </a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="http://123.56.223.136/" title="Blog">
+                                            <i class='social iconfont icon-email'></i>
+                                            <span class="label">Blog</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-cover--overlay cover-slate"></div>
+        </div>
+
+        <div class="remark iUp">
+            <p class="power">© 2021 Powered By
+                <a href="http://123.56.223.136/" target="_blank"> MCL </a><!-- 点击跳转-->
+            </p>
+        </div>
+    </header>
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/fetch.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+   <!-- 网易云音乐 -->
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=29463838&auto=1&height=66"></iframe>
+</html>
